@@ -1,6 +1,7 @@
 package main;
 
 import java.util.Dictionary;
+
 import java.util.List;
 
 import javax.swing.border.EtchedBorder;
@@ -12,6 +13,7 @@ import org.TEXT_SUMMERY.TextSummeryFactory;
 import org.keyWords.KeyWordProcessor;
 import org.rankingModel.TextRankingModel;
 import org.text_extraction.ExtractionProcessor;
+import org.text_extraction.StringProcessor;
 
 public class Main {
 
@@ -30,6 +32,7 @@ public class Main {
 
 		System.out.println("================== text summary===========");
 		System.out.println(TextSummeryFactory.getSummary());
+	//StringProcessor.getSentenceKeyWordWeight("ডাম্বুলার  দ্বিতীয়  ওয়ানডের  মতো আজকের দিনের ম্যাচটিও যদি তৃষ্ণার্ত বৃষ্টির পেটে চলে যায়, লাভ হবে বাংলাদেশের। ");
 
 	}
 

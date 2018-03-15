@@ -11,8 +11,10 @@ public class TextSummeryFactory {
 	public static String getSummary() {
 
 		List<TextRankingModel> sortedSentenced = TextSortProcessor.getSortedTextList();
+		//System.out.println(sortedSentenced);
 		summary = "";
 		for (int i = 0; i < sortedSentenced.size(); i++) {
+			//System.out.println("Summary");
 			summary += sortedSentenced.get(i).getSentence();
 		}
 		return summary;
